@@ -1,0 +1,64 @@
+{
+    "name": "Matheus Domingos",
+    "photo": "https://avatars.githubusercontent.com/u/134434652?v=4",
+    "job": "Front-end Developer",
+    "location": "São João Nepomuceno - MG",
+    "phone": "(32) 99959-4386",
+    "email": "mfdmatheus@hotmail.com",
+    "skills": {
+      "hardSkills": [
+        {
+          "name": "Nodejs",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
+        },
+        {
+          "name": "Java",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/java.png"
+        },
+        {
+          "name": "Angular",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/angular.png"
+        },
+        {
+          "name": "React",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
+        },
+        {
+          "name": "Mongodb",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/mongodb.png"
+        },
+        {
+          "name": "Postgresql",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png"
+        }
+      ],
+      "softSkills": [
+        "Criatividade",
+        "Tomada de decisões",
+        "Trabalho em equipe",
+        "Organização",
+        "Facilidade de aprendizado"
+      ]
+    },
+    "languages": [
+      "Português BR",
+      "Inglês (Básico)"
+    ],
+    "portfolio": [
+      {
+        "name": "Web Pokedex",
+        "url": "https://github.com/DominMFD/WebPokeDex",
+        "github": true
+      },
+      {
+        "name": "Guia Básico de Valorant",
+        "url": "https://github.com/DominMFD/Bootstrap-valorantPage",
+        "github": true
+      },
+      {
+        "name": "WebBlog",
+        "url": "https://github.com/DominMFD/Angular-WebBlog",
+        "github": true
+      }
+    ]
+  }

@@ -1,0 +1,184 @@
+.acordeon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    transition: .25s;
+}
+
+.acordeon.open, .acordeon:hover {
+    background-color: #55569E;
+    border-color: #55569E;
+}
+
+.acordeon .trigger {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+
+
+.acordeon .trigger::after {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../images/seta.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+    background-position-y: 5px;
+    transition: .25s;
+}
+
+.acordeon .trigger:hover {
+    cursor: pointer;
+}
+
+.acordeon.open .trigger::after {
+    transform: rotate(0deg);
+}
+
+.acordeon .content {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.acordeon.open .content {
+    display: block;
+    height: auto;
+    opacity: 1;
+    padding: 0 1rem 1rem;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.languages li {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+    font-weight: 600;
+    gap: 2px;
+    font-size: 1.2rem;
+}
+
+.languages li::before {
+    content: "";
+    display: inline-block;
+    width: .7rem;
+    height: .7rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/check.svg);
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.projects li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+
+.projects li .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.15rem;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    gap: 5px;
+}
+
+.projects li .title.github::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/github.svg);
+}
+
+.projects li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.skills {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+
+.skill-list li img {
+    margin: 1rem;
+    max-width: 50px;
+}
+
+
+.content .personal ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.personal ul li {
+    margin-left: 2rem;
+    padding: .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+    }
+    .skill-list {
+        justify-content: start;
+    }
+}
